@@ -43,29 +43,26 @@
 
 <h5 class="jm-font"> 모델 설계 </h5>
 <p class="jm-font"> - 결론적으로 우리는 서체를 인식하는 모델과, 한자를 인식하는 모델을 분리하였다. 이렇게 되면 한자를 모르는 사용자는 서체와 상관없이 무슨 한자인지 검색 할 수 있으며,
-                      </p>
+                      서예를 공부하는 문하생은 자신이 공부하고 있는 서체가 정확한지 검사할 수 있으며, 서예를 평가하는 심사관은 서체에 걸맞게 한자의 문맥을 평가할 수 있다.</p>
 <img src="https://user-images.githubusercontent.com/32811724/147175816-bca1fd7a-4d96-44d6-ba9c-f234ee27510c.jpg" width="45%"></img>
-
-<h5 class="jm-font"> Model Separation </h5>
-<p class="jm-font"> - We sparated models by appearance model that predict what is the character is, and semantic model that evaluate how much the character resembled to the old challigrapher's characters </p>
 <br> </br>
-<h5 class="jm-font"> Data Collection </h5>
-<p class="jm-font"> - CharactersTrimPad28: 15,000,000 of character dataset, used for training appearance model</p>
-<p class="jm-font"> - Kaggle Chinese Calligraphy styles by Calligraphers: a dataset with handwritings of 20 famous old challigraphers, used for training semantic model</p>
 
-<h5 class="jm-font"> Training Models </h5>
-<p class="jm-font"> - By above datasets, we trained two models based on CNN </p>
+<h5 class="jm-font"> 학습 데이터 수집 </h5>
+<p class="jm-font"> - 두 모델을 학습할 용도로 인터넷에서 학습데이터 셋을 수집했으며, 서도대자전을 구입하여 실사용 테스트 셋을 직접 구축하였다.</p>
+<p class="jm-font"> - CharactersTrimPad28: 15,000,000개의 서로 다른 필체가 포함된 한자 데이터셋. 한자 인식 모델 학습에 사용</p>
+<p class="jm-font"> - Kaggle Chinese Calligraphy styles by Calligraphers: 20명의 유명한 서체가의 서체 데이터셋. 서체 인식 모델 학습에 사용</p>
 <br> </br>
-<h5 class="jm-font"> Results </h5>
-<p class="jm-font"> Appearance model - Precision 98.9%, F1 score 98.4%</p>
-<p class="jm-font"> Semantic model - Precision 98.5%, F1 score 99.0%</p>
-<br> </br>
-<h5 class="jm-font"> Presentation video </h5>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/v7sp5i0UEQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<h5 class="jm-font"> 모델 학습 </h5>
+<p class="jm-font"> - 위 데이터 셋과 모델 설계를 기반으로 학습을 진행했다. 두 모델 모두 CNN을 사용했다. 정확도는 아래와 같다.</p>
+<p class="jm-font"> 한자 인식 모델 - Precision 98.9%, F1 score 98.4%</p>
+<p class="jm-font"> 서체 인식 모델 - Precision 98.5%, F1 score 99.0%</p>
 <img src="https://user-images.githubusercontent.com/32811724/147175817-221effa6-9729-4c47-a386-50c2fba399fa.jpg" width="45%"></img>
 <img src="https://user-images.githubusercontent.com/32811724/147175818-a14b4694-d217-41e1-a2ab-de2788f68a64.jpg" width="45%"></img>
-
+<br> </br>
+<h5 class="jm-font"> 발표 비디오 </h5>
+<p class="jm-font"> - 아래는 POSTECH IT융합공학과 창의설계IV 데모데이 발표자료이다. 우수상을 수상하였다.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/v7sp5i0UEQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <div class="row g-5 mb-5" style="text-align:left">
 <hr width = "90%" color = "black">
