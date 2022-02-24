@@ -17,7 +17,7 @@
 
 
 
-<h5 class="jm-font"> 머리말 </h5>
+<h5 class="jm-font"> <b>머리말</b> </h5>
 <p class="jm-font"> - 나의 개발 철학은 '코드가 아닌 솔루션을 만들자'이다. 연구에만 머무는 기술이 실제 사람들을 이롭게 하는 꽃이되어 개화하는 시기는 사람들을 위해 기술이 사용되는 때이다.
                       인공지능도 결국은 하나의 수단에 불과하다. 때때로 후배들의 프로젝트 첨언을 할 때, 가장 많이 하는 이야기가 "인공지능은 수단이지, 목적이 되어선 안된다" 이기도 하다.
                       이 개발 철학을 실현하기 위해선 가만히 앉아서 연구만 해선 안된다. 직접 사용자가 될 사람을 만들고, 필요한 것이 무엇인지 조사하며, 스토리를 만든다. 아무리 예술적인 디자인도
@@ -27,7 +27,7 @@
                       내 대학 졸업 전 목표 중 하나였다.</p>
 <br></br>
 
-<h5 class="jm-font"> 서예가와의 만남 </h5>
+<h5 class="jm-font"> <b>서예가와의 만남</b> </h5>
 <p class="jm-font"> - 우선 우리는 서예가부터 만났다. 서예경진대회 심사원 출신 위덕대 교수님을 만났다. 처음엔 제목으로 지은 인공훈장답게 AR, 인공지능을 이용한 사용자 맞춤 인공지능 훈장님을 
                       만드려고 했다. 예를 들어 획 순서가 틀리는 것을 감지하여 비슷한 한자를 쓸 때 강조하여 알려주는 식으로 학습을 도와주는 것이다.</p>
 <p class="jm-font"> - 그러나 조금만 이야기해도 이는 서예를 몰라도 너무 모르는 생각이었다. 나는 초등학교때 획 순서를 생각하며 한자쓰기 숙제를 했던 편견에 머물러 있던 것이다. 교수님 말씀에 따르면
@@ -40,19 +40,19 @@
 <img src="https://user-images.githubusercontent.com/32811724/147175911-a20f1c23-6dbc-457c-978a-feafa7071c44.jpg" width="45%"></img>
 <br></br>
 
-<h5 class="jm-font"> 모델 설계 </h5>
+<h5 class="jm-font"> <b>모델 설계</b> </h5>
 <p class="jm-font"> - 결론적으로 우리는 서체를 인식하는 모델과, 한자를 인식하는 모델을 분리하였다. 이렇게 되면 한자를 모르는 사용자는 서체와 상관없이 무슨 한자인지 검색 할 수 있으며,
                       서예를 공부하는 문하생은 자신이 공부하고 있는 서체가 정확한지 검사할 수 있으며, 서예를 평가하는 심사관은 서체에 걸맞게 한자의 문맥을 평가할 수 있다.</p>
 <img src="https://user-images.githubusercontent.com/32811724/147175816-bca1fd7a-4d96-44d6-ba9c-f234ee27510c.jpg" width="45%"></img>
 <br> </br>
 
-<h5 class="jm-font"> 학습 데이터 수집 </h5>
+<h5 class="jm-font"> <b>학습 데이터 수집</b> </h5>
 <p class="jm-font"> - 두 모델을 학습할 용도로 인터넷에서 학습데이터 셋을 수집했으며, 서도대자전을 구입하여 실사용 테스트 셋을 직접 구축하였다.</p>
 <p class="jm-font"> - CharactersTrimPad28: 15,000,000개의 서로 다른 필체가 포함된 한자 데이터셋. 한자 인식 모델 학습에 사용</p>
 <p class="jm-font"> - Kaggle Chinese Calligraphy styles by Calligraphers: 20명의 유명한 서체가의 서체 데이터셋. 서체 인식 모델 학습에 사용</p>
 <br> </br>
 
-<h5 class="jm-font"> 모델 학습 </h5>
+<h5 class="jm-font"> <b>모델 학습</b> </h5>
 <p class="jm-font"> - 위 데이터 셋과 모델 설계를 기반으로 학습을 진행했다. 두 모델 모두 CNN을 사용했다. 정확도는 아래와 같다.</p>
 <p class="jm-font"> 한자 인식 모델 - Precision 98.9%, F1 score 98.4%</p>
 <p class="jm-font"> 서체 인식 모델 - Precision 98.5%, F1 score 99.0%</p>
@@ -60,7 +60,7 @@
 <img src="https://user-images.githubusercontent.com/32811724/147175818-a14b4694-d217-41e1-a2ab-de2788f68a64.jpg" width="45%"></img>
 <br> </br>
 
-<h5 class="jm-font"> 발표 비디오 </h5>
+<h5 class="jm-font"> <b>발표 비디오</b> </h5>
 <p class="jm-font"> - 아래는 POSTECH IT융합공학과 창의설계IV 데모데이 발표자료이다. 우수상을 수상하였다.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/v7sp5i0UEQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
